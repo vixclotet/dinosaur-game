@@ -21,9 +21,11 @@ Run the Game: Open index.html in any modern web browser.
 
 ## 🕹️ How to Play
 
-# Start: Press the spacebar to begin.
-# Jump: Press the spacebar to leap over obstacles.
-# Duck: Press the down arrow key to duck.
+Start: Press the spacebar to begin.
+
+Jump: Press the spacebar to leap over obstacles.
+
+Duck: Press the down arrow key to duck.
 
 
 ## 🤝 Contributing
