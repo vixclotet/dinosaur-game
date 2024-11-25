@@ -29,11 +29,6 @@ Jump: Press the spacebar to leap over obstacles.
 ## 🤝 Contributing
 Fork this repo and create a new branch:
 
-bash
-Copy code
-git checkout -b feature/YourFeatureName
-Submit a pull request. 💡
-
 📜 License
 This project is under the MIT License.
 
