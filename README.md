@@ -18,11 +18,15 @@ A quick, lightweight replica of the classic Google Chrome Dinosaur Game. Built i
    ```bash
    git clone https://github.com/vixclotet/dinosaur-game.git
 Run the Game: Open index.html in any modern web browser.
-🕹️ How to Play
-Start: Press the spacebar to begin.
-Jump: Press the spacebar to leap over obstacles.
-Duck: Press the down arrow key to duck.
-🤝 Contributing
+
+## 🕹️ How to Play
+
+# Start: Press the spacebar to begin.
+# Jump: Press the spacebar to leap over obstacles.
+# Duck: Press the down arrow key to duck.
+
+
+## 🤝 Contributing
 Fork this repo and create a new branch:
 
 bash
