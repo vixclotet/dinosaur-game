@@ -25,8 +25,6 @@ Start: Press the spacebar to begin.
 
 Jump: Press the spacebar to leap over obstacles.
 
-Duck: Press the down arrow key to duck.
-
 
 ## 🤝 Contributing
 Fork this repo and create a new branch:
