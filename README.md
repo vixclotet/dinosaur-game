@@ -1,2 +1,35 @@
-# dinosaur-game
-google chrome dinosaur game made with OpenAI o1 model
+# 🦖 Google Chrome Dinosaur Game Clone
+
+A quick, lightweight replica of the classic Google Chrome Dinosaur Game. Built in under 20 minutes for fun and nostalgia.
+
+## 🎥 Watch the Demo 
+
+[![🎮 Watch the Video Demo](https://img.youtube.com/vi/VwijQbkuzYs/0.jpg)](https://youtu.be/VwijQbkuzYs)
+
+## ✨ Features
+
+- 🎮 **Authentic gameplay mechanics**.
+- ⚡ **Responsive and lightweight**.
+- 🕹️ **Easy to play—no installations needed!**
+
+## 🚀 Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/vixclotet/dinosaur-game.git
+Run the Game: Open index.html in any modern web browser.
+
+## 🕹️ How to Play
+
+Start: Press the spacebar to begin.
+
+Jump: Press the spacebar to leap over obstacles.
+
+
+## 🤝 Contributing
+Fork this repo and create a new branch:
+
+📜 License
+This project is under the MIT License.
+
+For any questions or feedback, feel free to open an issue! 💬
