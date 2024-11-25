@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState, useEffect, useRef, useCallback } from 'react'
+import Image from 'next/image'
 
 const GAME_HEIGHT = 400
 const GAME_WIDTH = 1000
@@ -11,15 +12,15 @@ const SPEED_INCREASE_RATE = 0.001
 const INITIAL_SPEED = 5
 
 const Dinosaur = ({ y }: { y: number }) => (
-  <img src="/dinosaur.png" alt="Dinosaur" style={{ position: 'absolute', left: 10, top: y, width: 40, height: 40 }} />
+  <Image src="/dinosaur.png" alt="Dinosaur" style={{ position: 'absolute', left: 10, top: y, width: 40, height: 40 }} />
 )
 
 const Cactus = ({ x }: { x: number }) => (
-  <img src="/cactus.png" alt="Cactus" style={{ position: 'absolute', left: x, top: GAME_HEIGHT - 40, width: 20, height: 40 }} />
+  <Image src="/cactus.png" alt="Cactus" style={{ position: 'absolute', left: x, top: GAME_HEIGHT - 40, width: 20, height: 40 }} />
 )
 
 const Cloud = ({ x, y }: { x: number; y: number }) => (
-  <img src="/cloud.png" alt="Cloud" style={{ position: 'absolute', left: x, top: y, width: 60, height: 30 }} />
+  <Image src="/cloud.png" alt="Cloud" style={{ position: 'absolute', left: x, top: y, width: 60, height: 30 }} width={60} height={30} />
 )
 
 export default function DinosaurGame() {
@@ -83,13 +84,12 @@ export default function DinosaurGame() {
       window.removeEventListener('keydown', handleKeyDown)
       window.removeEventListener('keyup', handleKeyUp)
     }
-  }, [jump, gameOver, resetGame])
+  }, [jump, gameOver, resetGame, handleKeyDown, handleKeyUp])
 
   useEffect(() => {
     if (!gameStarted || gameOver) return // Stop game loop if game is over
 
     const gameLoop = (currentTime: number) => {
-      const deltaTime = currentTime - lastUpdateTimeRef.current
       lastUpdateTimeRef.current = currentTime
 
       // Update dinosaur position
@@ -164,7 +164,7 @@ export default function DinosaurGame() {
         cancelAnimationFrame(gameLoopRef.current)
       }
     }
-  }, [gameStarted, gameOver, jumping, dinoY, cacti, speed, score])
+  }, [gameStarted, gameOver, jumping, dinoY, cacti, jumpVelocity, speed, score])
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
